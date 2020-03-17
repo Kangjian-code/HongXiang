@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/login_bg.png</file>
+        <file>img/login_disable.png</file>
+        <file>img/login_hover.png</file>
+        <file>img/login_normal.png</file>
+        <file>img/show_psd.png</file>
+        <file>img/show_psd2.png</file>
+        <file>img/index/delete_icon.png</file>
+        <file>img/index/Group 34 Copy 2.png</file>
+        <file>img/index/Group 34 Copy 3.png</file>
+        <file>img/index/Group 34 Copy.png</file>
+        <file>img/index/logo.png</file>
+        <file>img/index/nav_icon1.png</file>
+        <file>img/index/nav_icon2.png</file>
+        <file>img/index/nav_icon3.png</file>
+        <file>img/index/nav_icon4.png</file>
+        <file>img/index/nav_icon5.png</file>
+        <file>img/index/nav_icon6.png</file>
+        <file>img/index/nav_icon7.png</file>
+        <file>img/index/nav_icon8.png</file>
+        <file>img/index/nav_icon9.png</file>
+        <file>img/index/nav_icon10.png</file>
+        <file>img/index/room_icon.png</file>
+        <file>img/index/switch_close.png</file>
+        <file>img/index/switch_open.png</file>
+        <file>img/index/tab_1.png</file>
+        <file>img/index/tab_2.png</file>
+        <file>img/index/tab_3.png</file>
+        <file>img/index/tab_4.png</file>
+        <file>img/index/user_icon.png</file>
+        <file>img/index/article_bg.png</file>
+        <file>img/index/left_close.png</file>
+        <file>img/index/left_open.png</file>
+        <file>img/index/close_hover.png</file>
+        <file>img/index/close_normal.png</file>
+        <file>img/index/error_icon.png</file>
+        <file>img/index/info_icon.png</file>
+        <file>img/index/question_icon.png</file>
+        <file>img/index/table_bg.png</file>
+        <file>img/index/calendar.png</file>
+        <file>img/index/delete.png</file>
+        <file>img/index/shake_n.png</file>
+        <file>img/index/shake_w.png</file>
+        <file>img/index/status_dis.png</file>
+        <file>img/index/status_normal.png</file>
+        <file>img/index/u_n.png</file>
+        <file>img/index/u_w.png</file>
+        <file>img/gb.jpg</file>
+        <file>img/index/position_close.png</file>
+        <file>img/index/position_open.png</file>
+        <file>img/index/scale_add.png</file>
+        <file>img/index/scale_sub.png</file>
+        <file>img/index/status_warning.png</file>
+    </qresource>
+</RCC>

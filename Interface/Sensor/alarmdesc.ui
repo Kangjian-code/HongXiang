@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AlarmDesc</class>
+ <widget class="QWidget" name="AlarmDesc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1005</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="leftWidget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>154</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#leftWidget{
+background:rgba(81,149,202,1);
+border-style:solid;
+border-width:0px 16px 0px 0px;
+border-color:#447CA7;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="rightWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#rightWidget{
+	background:rgba(241,246,255,1);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="topWidget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>1766</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#topWidget{
+	background:rgba(241,246,255,1);
+	border-style:solid;
+	border-color:#DFDFDF;
+	border-width: 0px 0px 1px 0px;
+}</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>15</y>
+           <width>231</width>
+           <height>27</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="topText1">
+            <property name="styleSheet">
+             <string notr="true">width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;</string>
+            </property>
+            <property name="text">
+             <string>描述信息</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="topText2">
+            <property name="styleSheet">
+             <string notr="true">width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;</string>
+            </property>
+            <property name="text">
+             <string>监测点</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget#widget{
+background:#FFFFFF;
+}</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QWidget" name="tableWidget" native="true">
+           <widget class="QWidget" name="layoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>841</width>
+              <height>62</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>时间：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="startTimeEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>至</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDateEdit" name="endTimeEdit"/>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="queryBtn">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="resetBtn">
+               <property name="text">
+                <string>归复选中</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="exportBtn">
+               <property name="text">
+                <string>导出所选文件</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="tableArea" native="true">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>70</y>
+              <width>851</width>
+              <height>861</height>
+             </rect>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="chartArea" native="true">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QWidget" name="chart1" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#chart1{
+border: 1px solid #DFDFDF;
+}</string>
+              </property>
+              <widget class="QChartView" name="chartView1">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>30</y>
+                 <width>401</width>
+                 <height>341</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QWidget" name="chart2" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#chart2{
+border: 1px solid #DFDFDF;
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QWidget" name="chart3" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#chart3{
+border: 1px solid #DFDFDF;
+}</string>
+              </property>
+              <widget class="QChartView" name="chartView3">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>401</width>
+                 <height>331</height>
+                </rect>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QWidget" name="chart4" native="true">
+              <property name="styleSheet">
+               <string notr="true">QWidget#chart4{
+border: 1px solid #DFDFDF;
+}
+QLabel{
+width:267px;
+height:19px;
+font-size:14px;
+font-family:MicrosoftYaHei;
+color:rgba(38,38,38,1);
+line-height:19px;
+}</string>
+              </property>
+              <widget class="QLabel" name="label_4">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>30</y>
+                 <width>411</width>
+                 <height>18</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">width:267px;
+height:19px;
+font-size:14px;
+font-family:MicrosoftYaHei;
+color:rgba(38,38,38,1);
+line-height:19px;
+</string>
+               </property>
+               <property name="text">
+                <string>来源：2017年09月22日11时23分53秒.dat</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_5">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>50</y>
+                 <width>351</width>
+                 <height>61</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>峰值：-40.98dBm</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_6">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>110</y>
+                 <width>191</width>
+                 <height>16</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>缺陷描述：悬浮放电</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_7">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>150</y>
+                 <width>181</width>
+                 <height>18</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>概率：100%</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_8">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>190</y>
+                 <width>281</width>
+                 <height>18</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>缺陷原因：金属部件松动等</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

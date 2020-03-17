@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataCheckPage</class>
+ <widget class="QWidget" name="DataCheckPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1005</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="leftWidget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>154</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#leftWidget{
+background:rgba(81,149,202,1);
+border-style:solid;
+border-width:0px 16px 0px 0px;
+border-color:#447CA7;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="rightWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#rightWidget{
+	background:rgba(241,246,255,1);
+}</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="topWidget" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>1766</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QWidget#topWidget{
+	background:rgba(241,246,255,1);
+	border-style:solid;
+	border-color:#DFDFDF;
+	border-width: 0px 0px 1px 0px;
+}</string>
+        </property>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>15</y>
+           <width>161</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;</string>
+         </property>
+         <property name="text">
+          <string>历史数据/数据诊断</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="funcWidget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget#funcWidget{
+background:#FFFFFF;
+}</string>
+        </property>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>1751</width>
+           <height>881</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QWidget" name="chart1" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#chart1{
+border: 1px solid #DFDFDF;
+}</string>
+            </property>
+            <widget class="QChartView" name="chartView1">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>30</y>
+               <width>751</width>
+               <height>341</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QWidget" name="chart2" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#chart2{
+border: 1px solid #DFDFDF;
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="chart3" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#chart3{
+border: 1px solid #DFDFDF;
+}</string>
+            </property>
+            <widget class="QChartView" name="chartView3">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>30</y>
+               <width>751</width>
+               <height>331</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QWidget" name="chart4" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#chart4{
+border: 1px solid #DFDFDF;
+}
+QLabel{
+width:267px;
+height:19px;
+font-size:14px;
+font-family:MicrosoftYaHei;
+color:rgba(38,38,38,1);
+line-height:19px;
+}</string>
+            </property>
+            <widget class="QLabel" name="label_4">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>411</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">width:267px;
+height:19px;
+font-size:14px;
+font-family:MicrosoftYaHei;
+color:rgba(38,38,38,1);
+line-height:19px;
+</string>
+             </property>
+             <property name="text">
+              <string>来源：2017年09月22日11时23分53秒.dat</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>50</y>
+               <width>351</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>峰值：-40.98dBm</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>110</y>
+               <width>191</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>缺陷描述：悬浮放电</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>150</y>
+               <width>181</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>概率：100%</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>190</y>
+               <width>281</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>缺陷原因：金属部件松动等</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>678</width>
+           <height>28</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>时间：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateTimeEdit" name="startTimeEidt">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>~</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateTimeEdit" name="endTimeEdit">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <item>
+             <property name="text">
+              <string>录波文件1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>录波文件2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>录波文件3</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>qchartview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReadTimeDataPage</class>
+ <widget class="QWidget" name="ReadTimeDataPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1005</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="topWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#topWidget{
+	background:rgba(241,246,255,1);
+	border-style:solid;
+	border-color:#DFDFDF;
+	border-width: 0px 0px 1px 0px;
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>15</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;</string>
+    </property>
+    <property name="text">
+     <string>实时数据/监测数据表</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="mainWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>1920</width>
+     <height>955</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#mainWidget{
+	background:#ffffff;
+}
+QLabel{
+width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="hLayout">
+    <property name="spacing">
+     <number>13</number>
+    </property>
+    <property name="leftMargin">
+     <number>40</number>
+    </property>
+    <property name="topMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>40</number>
+    </property>
+    <property name="bottomMargin">
+     <number>72</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="layout">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="UHFTab">
+         <attribute name="title">
+          <string>UHF</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>1811</width>
+            <height>811</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="leftMargin">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>间隔：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="intervalCombo1">
+               <item>
+                <property name="text">
+                 <string>PT间隔1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>监测点：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="monitorCombo1">
+               <item>
+                <property name="text">
+                 <string>监测点1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="m_pTableWidget"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="noiseTab">
+         <attribute name="title">
+          <string>噪声</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>1811</width>
+            <height>811</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="leftMargin">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>间隔：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="intervalCombo2">
+               <item>
+                <property name="text">
+                 <string>PT间隔1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>监测点：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="monitorCombo2">
+               <item>
+                <property name="text">
+                 <string>监测点1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="m_pTableWidget2"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="quakeTab">
+         <attribute name="title">
+          <string>震动</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>1811</width>
+            <height>811</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>20</number>
+             </property>
+             <property name="leftMargin">
+              <number>30</number>
+             </property>
+             <property name="topMargin">
+              <number>10</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>间隔：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="intervalCombo3">
+               <item>
+                <property name="text">
+                 <string>PT间隔1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PT间隔4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>监测点：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="monitorCombo3">
+               <item>
+                <property name="text">
+                 <string>监测点1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>监测点5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>不限</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="text">
+                <string>查询</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableWidget" name="m_pTableWidget3"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

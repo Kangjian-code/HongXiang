@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeviceWarningPage</class>
+ <widget class="QWidget" name="DeviceWarningPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1005</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="topWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#topWidget{
+	background:rgba(241,246,255,1);
+	border-style:solid;
+	border-color:#DFDFDF;
+	border-width: 0px 0px 1px 0px;
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>15</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;</string>
+    </property>
+    <property name="text">
+     <string>报警信息/设备报警</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="mainWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>1920</width>
+     <height>955</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#mainWidget{
+	background:#ffffff;
+}
+QLabel{
+width:64px;
+height:21px;
+font-size:16px;
+font-family:微软雅黑;
+color:rgba(38,38,38,1);
+line-height:21px;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="hLayout">
+    <property name="spacing">
+     <number>13</number>
+    </property>
+    <property name="leftMargin">
+     <number>40</number>
+    </property>
+    <property name="topMargin">
+     <number>30</number>
+    </property>
+    <property name="rightMargin">
+     <number>40</number>
+    </property>
+    <property name="bottomMargin">
+     <number>40</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="layout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>    间隔：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="spacingCombo">
+        <item>
+         <property name="text">
+          <string>不限</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>  监测点：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="sensorCombo">
+        <item>
+         <property name="text">
+          <string>不限</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>    故障类型：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="alarmTypeCombo">
+        <item>
+         <property name="text">
+          <string>不限</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>传感器未接入</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>采集报警异常</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>同步频率出错</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>同步源未连接</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>同步源连接但是与用户设置同步方式的不同</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>    时间：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateTimeEdit" name="startTimeEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>至</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateTimeEdit" name="endTimeEdit"/>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="queryBtn">
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>复归选中</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>导出报表</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

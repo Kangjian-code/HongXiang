@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/qss">
+        <file>blue/add_bottom.png</file>
+        <file>blue/add_left.png</file>
+        <file>blue/add_right.png</file>
+        <file>blue/add_top.png</file>
+        <file>blue/branch_close.png</file>
+        <file>blue/branch_open.png</file>
+        <file>blue/calendar_nextmonth.png</file>
+        <file>blue/calendar_prevmonth.png</file>
+        <file>blue/checkbox_checked.png</file>
+        <file>blue/checkbox_checked_disable.png</file>
+        <file>blue/checkbox_parcial.png</file>
+        <file>blue/checkbox_parcial_disable.png</file>
+        <file>blue/checkbox_unchecked.png</file>
+        <file>blue/checkbox_unchecked_disable.png</file>
+        <file>blue/radiobutton_checked.png</file>
+        <file>blue/radiobutton_checked_disable.png</file>
+        <file>blue/radiobutton_unchecked.png</file>
+        <file>blue/radiobutton_unchecked_disable.png</file>
+        <file>blue.qss</file>
+        <file>blue/calendar.png</file>
+    </qresource>
+</RCC>

@@ -31,6 +31,12 @@ LoginPage::LoginPage(QWidget *parent)
     m_pShowPsdBtn->move(1147,568);
     connect(m_pShowPsdBtn,SIGNAL(clicked()),this,SLOT(showPsdClicked()));
 //    m_pShowPsdBtn->setCallback(this,my_selector(showPsdClicked));
+
+    //记住密码checkbox
+    //TDCheckbox
+    m_pRemenberPsw = new TDCheckbox("记住密码");
+    m_pRemenberPsw->move(700,680);
+
     //登录按钮
     m_pLoginBtn = new TDPushButton(":/img/login_normal.png",":/img/login_hover.png",":/img/login_normal.png",this);
     m_pLoginBtn->move(700,720);

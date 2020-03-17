@@ -14,6 +14,7 @@
 #include "ThreeDog/tdwidget.h"
 #include "ThreeDog/tdpushbutton.h"
 #include "ThreeDog/tdtoolbar.h"
+#include "ThreeDog/tdcheckbox.h"
 #include <QLineEdit>
 #include <QLabel>
 #include <QDebug>
@@ -37,6 +38,7 @@ private:
     TDToolbar * m_pShowPsdBtn;
     QLabel *    m_pCopyrightLabel;
     QLabel *    m_pHelpLabel;
+    TDCheckbox *m_pRemenberPsw;
 
 };
 

@@ -34,8 +34,9 @@ LoginPage::LoginPage(QWidget *parent)
 
     //记住密码checkbox
     //TDCheckbox
-    m_pRemenberPsw = new TDCheckbox("记住密码");
-    m_pRemenberPsw->move(700,680);
+    m_pRemenberPsw = new QCheckBox("记住密码",this);
+    m_pRemenberPsw->setStyleSheet("font-size:18px");
+    m_pRemenberPsw->move(720,630);
 
     //登录按钮
     m_pLoginBtn = new TDPushButton(":/img/login_normal.png",":/img/login_hover.png",":/img/login_normal.png",this);
